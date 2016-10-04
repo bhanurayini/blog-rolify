@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th><user id></th>
       <th>Post</th>
       <th>Body</th>
       <th colspan="3"></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @comments.each do |comment| %>
       <tr>
+        <td><%= comment.user_id %></td>
         <td><%= comment.post %></td>
         <td><%= comment.body %></td>
         <td><%= link_to 'Show', comment %></td>
